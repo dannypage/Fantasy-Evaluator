@@ -19,11 +19,11 @@ combos.each do |c|
     salary = c.sum {|h| h[:salary] }
     points = c.sum {|h| h[:pts] }
     
-    if salary >= 55000 and salary <= 60000 and points > 70
+    if salary >= 50000 and salary <= 60000 and points > 70
         filtered_combos.push(c)
-        puts c
-        puts '----'
+#        puts c
+#        puts '----'
     end
 end
 
-
+puts filtered_combos.count
